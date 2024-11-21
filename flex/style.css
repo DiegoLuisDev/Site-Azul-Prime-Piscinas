@@ -1,0 +1,1042 @@
+:root {
+    --color-btn: rgb(0, 195, 255);
+    --color-black: #424242;
+    --color-whats: #15e715;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "poppinslight";
+}
+
+body {
+   margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+p {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.container {
+    max-width: 110rem;
+    margin: auto;
+    padding: 0 3rem;
+    /* background-color: #37b8e6;  */
+}
+
+
+/* Botoes */
+.btn {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 2rem 0;
+    background-color: var(--color-btn);
+    color: white;
+    border-radius: 0.8rem;
+    text-align: center;
+    width: 35rem;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    outline: 1px solid var(--color-black);
+    background-color: white;
+    color: var(--color-black);
+}
+
+.div-btn {
+    text-align: center;
+}
+   
+.conte-btn {
+    transition: color .5s;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: fit-content;
+    padding: 2rem 3rem;
+    box-shadow: 1px 1px 1rem black;
+}
+
+
+/* SECTION HEADER */
+.wrapper-header {
+    background-color: white;
+    height: auto;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-div img {
+    width: 18rem;
+    height: auto;
+    padding: 1rem 0;
+    /* background-color: brown; */
+}
+
+.header-nav ul {
+    display: flex;
+    padding-left: 0;
+    gap: 4rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header-nav li {
+    list-style-type: none;
+}
+
+
+.header-nav a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1.5rem 3rem;
+    background-color: var(--color-btn);
+    color: white;
+    border-radius: .5rem;
+    box-shadow: 1px 1px .5rem black;
+    transition: color .5s;
+}
+
+.header-nav a:hover {
+    background-color: white;
+    outline: 1px solid black;
+    color: black;
+}
+
+.login-button {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu ul {
+    display: none;
+}
+
+.open {
+    display: block;
+}
+
+@media screen and (max-width: 1020px) {
+    .header-nav {
+        display: none;
+    }
+
+    .login-button {
+        display: block;
+    }
+
+    .login-button img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .login-button button {
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        background-color: var(--color-black);
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu a {
+        display: block;
+        padding-top: 1rem;
+        text-decoration: none;
+        font-size: 1.8rem;
+        color: white;
+    }  
+}
+
+/* SECTION PRINCIPAL */
+.wrapper-principal {
+    background-image: url(img/fundoPrincipal.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    display: flex;
+}
+
+.sec-principal {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgba(173, 216, 253, 0.785); */
+    padding: 10rem 3rem;
+    width: 110rem;
+    color: white;
+    gap: 4rem;
+}
+
+.sec-text {
+    /* background-color: rgb(117, 214, 181); */
+    width: 60rem;
+}
+
+.sec-text h1 {
+    margin-bottom: 4rem;
+    color: white;
+}
+
+.sec-text p {
+    margin-bottom: 4rem;
+    font-weight: bold;
+}
+
+.sec-text strong {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.sec-principal-btn {
+    background-color: var(--color-whats);
+    color: white;
+}
+
+.sec-principal-btn:hover {
+    background-color: #00d100;
+    font-size: 2rem; 
+    padding: 2rem 0 1.7rem;
+    color: white;
+    outline: none;
+}
+
+.form {
+    background-color: white;
+    padding: 3rem;
+    width: 40rem;
+    border-radius: 1rem;
+}
+
+.form-fieldset {
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.form-legend {
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 0 2rem;
+    color: var(--color-black);
+}
+
+label {
+    text-align: left;
+    font-size: 2rem;
+    color: var(--color-black);
+    margin-bottom: .5rem;
+}
+
+input {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: .8rem;
+    border: 1px solid #ccc;
+}
+
+.input-btn {
+    width: 100%;
+    margin-bottom: 0;
+    padding: 1.5rem 0;
+    letter-spacing: 1px;
+    transition: color .5s;
+    cursor: pointer;
+}
+
+
+/* SOBRE */
+.wrapper-sobre {
+    background-color: white;
+    height: auto;
+    border-bottom: .1rem solid var(--color-black);
+}
+
+.sobre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10rem 3rem;
+    gap: 6rem;
+    color: var(--color-black);
+}
+
+.sobre-content {
+    width: 48rem;
+}
+
+.sobre-content h2 {
+    margin: 5rem 0;
+    font-size: 5rem;
+}
+
+.sobre-content p {
+    letter-spacing: 1.5px;
+    margin: 1rem;
+}
+
+
+/* SECTION SERVICOS */
+.wrapper-servicos {
+    background-color: white;
+    height: auto;
+    /* border-bottom: 1px solid var(--color-black); */
+}
+
+.servicos {
+    padding: 10rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-black);
+}
+
+.servicos h2 {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+}
+
+.servicos-itens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5rem;
+    gap: 2rem;
+    
+}
+
+.servicos-itens .divs {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    width: 33.3rem;
+    box-shadow: 1px 1px 1rem black;
+}
+
+.servicos img {
+    height: 30rem;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.servicos-divs {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 1rem;
+    color: var(--color-black);
+}
+
+.servicos h3 a {
+    display: inline-block;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: var(--color-black);
+}
+
+.servicos p {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: var(--color-black);
+    margin-bottom: auto;
+    color: black;
+}
+
+.servicos-divs-a {
+    width: 100%;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    transition: color .5s;
+}
+   
+.servicos-btn {
+    transition: color .5s;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: fit-content;
+    padding: 2rem 3rem;
+    box-shadow: 1px 1px 1rem black;
+}
+
+
+/* SESÃO PORTIFOLIO */
+.wrapper-port {
+    background-color: var(--color-btn);
+    height: auto;
+    border-radius: 5rem;
+}
+
+.port {
+    padding: 10rem 3rem;
+}
+
+.port h2 {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 5rem;
+    color: white;
+}
+
+.port-itens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.port img {
+    width: 33.3rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 1rem black;
+}
+
+
+/* SESÃO PORTIFOLIO */
+.wrapper-avalia {
+    background-color: rgb(255, 162, 0);
+    height: auto;
+    border-radius: 5rem;
+    margin-top: 2rem;
+}
+
+.avalia {
+    padding: 10rem 3rem;
+}
+
+.avalia h2 {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 5rem;
+    color: white;
+}
+
+.avalia-itens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.avalia img {
+    width: 45rem;
+    box-shadow: 1px 1px 1rem black;
+}
+
+
+
+/* SESSÃO CONTATOS */
+.wrapper-cont {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: auto;
+    border-radius: 5rem 5rem;
+    margin: 2rem 0;
+}
+
+.contato {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    /* background-color: #ccc; */
+    padding: 10rem 3rem;
+    justify-content: center;
+    color: white;
+}
+
+
+.contato-img, .div-contato, .div-redes {
+    width: 33.3rem;
+    /* background-color: aquamarine; */
+}
+
+.contato-img {
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.div-contato {
+    padding: 3rem 3rem;
+    border-left: 1px solid white;
+}
+
+.div-contato h3 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.div-contato .p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.div-contato a {
+    display: block;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.div-redes {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 3rem;
+    gap: 2rem;
+    border-left: 1px solid white;
+}
+
+.div-redes h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.link-icon {
+    display: inline-block;
+    /* Passa a receber formatação, e permanece como elemento de linha  */
+    transition: color .3s;
+    /* Estiliza a transição */
+    text-decoration: none;
+    font-size: 2rem;
+    /* background-color: aquamarine; */
+}
+
+.link-icon:hover {
+    color: white;
+    /* font-weight: bold; */
+}
+
+.div-redes svg {
+    width: 4rem;
+    height: 4rem;
+    fill: currentColor;
+    vertical-align: middle;
+    margin-right: 1rem;
+    display: inline-block;
+}
+
+.face {
+    color: var(--color-btn)
+}
+
+.insta {
+    color: rgb(255, 111, 0);
+}
+
+.whats {
+    color: var(--color-whats);
+}
+
+footer {
+    text-align: center;
+    padding: 4rem;
+}
+
+
+/* PAGINA SERVICOS */
+
+
+/* SESSAO MANUTENCAO */
+.wrapper-manu {
+    background-image: url(img/fundo-servicos.jpg);
+    height: auto;
+    background-size: cover;
+    border-radius: 0 0 5rem 5rem ;
+}
+
+.manu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10rem 3rem;
+    color: black;
+    gap: 4rem;
+}
+
+.manu-content {
+    color: white;
+}
+
+.manu-content h1 {
+    font-size: 6rem;
+    margin-bottom: 6rem;
+}
+
+.manu-content p {
+    line-height: 1.4;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.manu-content p:nth-child(3) {
+    margin-bottom: 6rem;
+}
+
+.manu-content a {
+    color: var(--color-black);
+}
+
+.manu-btn {
+    background-color: var(--color-whats);
+}
+
+
+/* SESSAO PORQUE */
+.wrapper-pq {
+    background-color: white;
+    height: auto;
+    border-bottom: 1px solid var(--color-black);
+}
+
+.pq {
+    display: flex;
+    padding: 10rem 3rem;
+    color: var(--color-black);
+}
+
+.pq-content {
+    /* background-color: aliceblue; */
+    width: 100%;
+}
+
+.pq-content h2 {
+    margin: 5rem 0;
+    font-size: 4rem;
+}
+
+.pq-content li {
+    letter-spacing: 1.5px;
+    margin: 3rem;
+    font-size: 2rem;
+}
+
+
+/* SECTION RECUPERACAO */
+.wrapper-recu {
+    background-color: white;
+    height: auto;
+    border-bottom: 1px solid var(--color-black);
+}
+
+.recu {
+    padding: 10rem 3rem;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-black);
+    /* background-color: aquamarine; */
+}
+
+.recu h2 {
+    font-size: 4rem;
+    margin-bottom: 6rem;
+}
+
+.recu-content {
+    margin-bottom: rem;
+}
+
+.recu-content h3 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+.recu-content ul {
+    /* background-color: aquamarine; */
+    margin-bottom: 5rem;
+}
+
+.recu-content li {
+    letter-spacing: 1px;
+    font-size: 2rem;
+    margin: 3rem;
+    color: var(--color-black);
+}
+
+.recu-content p {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: var(--color-black);
+    margin-bottom: auto;
+    color: black;
+}
+
+
+/* SECTION AREIA */
+.wrapper-areia {
+    background-color: white;
+    height: auto;
+    border-bottom: 1px solid var(--color-black);
+}
+
+.areia {
+    padding: 10rem 3rem;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-black);
+}
+
+.areia h2 {
+    font-size: 4rem;
+    margin-bottom: 6rem;
+    /* background-color: aquamarine; */
+}
+
+.areia-content h3 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+.areia-content ul {
+    margin-bottom: 5rem;
+}
+
+.areia-content li {
+    letter-spacing: 1px;
+    font-size: 2rem;
+    margin: 3rem;
+    color: var(--color-black);
+}
+
+.areia-content p {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: var(--color-black);
+    margin-bottom: auto;
+    color: black;
+}
+
+/* SESSAO INSTALACAO */
+.wrapper-instala {
+    background-color: white;
+    height: auto;
+    border-bottom: 1px solid var(--color-black);
+    border-radius: 10rem;
+}
+
+.instala {
+    padding: 10rem 3rem;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-black);
+}
+
+.instala h2 {
+    font-size: 4rem;
+    margin-bottom: 6rem;
+    /* background-color: aquamarine; */
+}
+
+.instala-content h3 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+.instala-content ul {
+    margin-bottom: 5rem;
+}
+
+.instala-content li {
+    letter-spacing: 1px;
+    font-size: 2rem;
+    margin: 3rem;
+    color: var(--color-black);
+}
+
+.instala-content p {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: var(--color-black);
+    margin-bottom: auto;
+    color: black;
+}
+
+/* SESSAO HIDRAULICA */
+.wrapper-hidra {
+    background-color: white;
+    height: auto;
+}
+
+.hidra {
+    padding: 10rem 3rem;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-black);
+}
+
+.hidra h2 {
+    font-size: 4rem;
+    margin-bottom: 6rem;
+    /* background-color: aquamarine; */
+}
+
+.hidra-content h3 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+.hidra-content ul {
+    margin-bottom: 5rem;
+}
+
+.hidra-content li {
+    letter-spacing: 1px;
+    font-size: 2rem;
+    margin: 3rem;
+    color: var(--color-black);
+}
+
+.hidra-content p {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: var(--color-black);
+    margin-bottom: auto;
+    color: black;
+}
+
+/* SESSAO ILUMINACAO */
+.wrapper-ilumi {
+    background-color: var(--color-btn);
+    height: auto;
+    border-radius: 5rem;
+}
+
+.ilumi {
+    padding: 10rem 3rem;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-black);
+}
+
+.ilumi h2 {
+    font-size: 4rem;
+    margin-bottom: 6rem;
+    /* background-color: aquamarine; */
+}
+
+.ilumi-content h3 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+.ilumi-content ul {
+    margin-bottom: 5rem;
+}
+
+.ilumi-content li {
+    letter-spacing: 1px;
+    font-size: 2rem;
+    margin: 3rem;
+    color: var(--color-black);
+}
+
+.ilumi-content p {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: var(--color-black);
+    margin-bottom: auto;
+    color: black;
+}
+
+.ilumi-content a {
+   background-color: var(--color-black);
+   color: white;
+}
+
+.ilumi-content a:hover {
+    background-color: white;
+    color: var(--color-black);
+ }
+
+/* SESSAO REJUNTE */
+.wrapper-reju {
+    background-color: white;
+    height: auto;
+}
+
+.reju {
+    padding: 10rem 3rem;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-black);
+}
+
+.reju h2 {
+    font-size: 4rem;
+    margin-bottom: 6rem;
+    /* background-color: aquamarine; */
+}
+
+.reju-content h3 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+.reju-content ul {
+    margin-bottom: 5rem;
+}
+
+.reju-content li {
+    letter-spacing: 1px;
+    font-size: 2rem;
+    margin: 3rem;
+    color: var(--color-black);
+}
+
+.reju-content p {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: var(--color-black);
+    margin-bottom: auto;
+    color: black;
+}
+
+/* SESSAO CONTE */
+.wrapper-conte {
+    background-color: rgb(0, 38, 255);
+    height: auto;
+    border-radius: 5rem;
+}
+
+.conte {
+    padding: 10rem 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-black);
+    color: white;
+}
+
+.conte-content {
+    display: flex;
+    flex-direction: column;
+    width: 60rem;
+}
+
+.conte h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.conte-content p {
+    margin-bottom: 6rem;
+    color: white;
+}
+
+.conte h3 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+.conte .input-btn {
+    background-color: rgb(0, 38, 255);
+}
+
+.conte .input-btn:hover {
+    background-color: white;
+    transition: color .5s;
+}
+
+
+.whatsapp {
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    z-index: 9999;
+    border-radius: 50%;
+}
+
+.whatsapp img {
+    border-radius: 25%;
+}
+
+
+@media (max-width: 768px) { /* Ajuste para telas menores */  
+    .servicos h1 {
+        font-size: 4rem;
+    }
+
+    .form-legend {
+        font-size: 2.14rem;
+    }
+
+    .servicos-divs h3 {
+        font-size: 2.5rem;
+    }
+
+    .servicos-btn {
+        font-size: 1.6rem;
+        font-weight: 900   ;
+    }
+
+    .servicos h2 {
+        font-size: 4.8rem;
+    }
+
+    .servicos h3 a {
+        font-size: 3rem;
+    }
+
+    .conte-btn {
+        padding: 2rem;
+    }
+
+    .manu-content p {
+        background-color: rgba(255, 255, 255, 0.758); 
+        border-radius: 1rem;
+        padding: 1rem;
+        color: var(--color-black);
+    }
+
+    .sec-text,
+    .form,
+    .sobre-img,
+    .sobre-content,
+    .servicos-itens .divs,
+    .port img,
+    .btn, 
+    .contato-img, 
+    .div-contato,
+    .div-redes,
+    .manu-img,
+    .avalia img {
+        width: 100%; /* Ocupa 100% da largura do container pai */
+        margin: 2rem 0; /* Ajuste a margem para espaçamento vertical */
+    }
+}
