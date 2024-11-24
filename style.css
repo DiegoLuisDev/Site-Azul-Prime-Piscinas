@@ -10,15 +10,18 @@ html {
 }
 
 body {
-   margin: 0;
+  background: #f4f4f9;
+  color: #333;
+  font-size: 16px;
 }
+
 
 * {
-    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; 
     margin: 0;
     padding: 0;
-}
-
+    box-sizing: border-box;
+  }
 h1 {
     font-size: 5rem;
 }
@@ -29,7 +32,7 @@ p {
 }
 
 .container {
-    max-width: 110rem;
+    max-width: 80%;
     margin: auto;
     padding: 0 3rem;
     /* background-color: #37b8e6;  */
@@ -39,22 +42,22 @@ p {
 /* Botoes */
 .btn {
     display: inline-block;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: bold;
     text-decoration: none;
     padding: 2rem 0;
     background-color: var(--color-btn);
     color: white;
-    border-radius: 0.8rem;
+    
     text-align: center;
     width: 35rem;
-    letter-spacing: 1px;
+    
 }
 
 .btn:hover {
-    outline: 1px solid var(--color-black);
-    background-color: white;
-    color: var(--color-black);
+    outline: 3px solid var(--color-btn);
+    color: var(--color-btn);
+    background-color: transparent;
 }
 
 .div-btn {
@@ -62,12 +65,11 @@ p {
 }
    
 .conte-btn {
-    transition: color .5s;
     letter-spacing: 1px;
     text-transform: uppercase;
     width: fit-content;
     padding: 2rem 3rem;
-    box-shadow: 1px 1px 1rem black;
+ 
 }
 
 
@@ -113,7 +115,7 @@ p {
     padding: 1.5rem 3rem;
     background-color: var(--color-btn);
     color: white;
-    border-radius: .5rem;
+    
     box-shadow: 1px 1px .5rem black;
     transition: color .5s;
 }
@@ -186,7 +188,7 @@ p {
     background-size: cover;
     height: auto;
     display: flex;
-    border-radius: 0 0 5rem 5rem;
+
 }
 
 .sec-principal {
@@ -238,7 +240,7 @@ p {
     background-color: white;
     padding: 3rem;
     width: 40rem;
-    border-radius: 1rem;
+  
 }
 
 .form-fieldset {
@@ -268,7 +270,7 @@ input {
     font-size: 1.5rem;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
-    border-radius: .8rem;
+  
     border: 1px solid #ccc;
 }
 
@@ -287,7 +289,7 @@ input {
     background-color: white;
     height: auto;
     border-bottom: .1rem solid var(--color-black);
-    border-radius: 0 0 5rem 5rem;
+
 }
 
 .sobre {
@@ -353,7 +355,7 @@ input {
 .servicos img {
     height: 30rem;
     width: 100%;
-    border-radius: 8px 8px 0 0;
+    border-radius: 1rem 1rem 0 0;
 }
 
 .servicos-divs {
@@ -401,12 +403,14 @@ input {
 .wrapper-port {
     background-color: var(--color-btn);
     height: auto;
-    border-radius: 5rem;
+    padding: 0 0 5rem;
 }
 
 .port {
-    padding: 10rem 3rem;
+    padding: 5rem 3rem;
+
 }
+
 
 .port h2 {
     font-size: 5rem;
@@ -417,23 +421,41 @@ input {
 
 .port-itens {
     display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
+    justify-content: start;
+    overflow: hidden;
+    position: relative;
 }
 
-.port img {
-    width: 33.3rem;
+.port-itens-wrapper {
+    display: flex;
+    gap: 3rem; /* Espaçamento entre as imagens */
+    animation: slide 2000s linear infinite; /* Animação contínua */
+}
+
+.port-itens-wrapper .port img {
+    width: 100%;
     border-radius: 1rem;
     box-shadow: 1px 1px 1rem black;
 }
+
+/* Animação de deslizamento infinito */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
 
 
 /* SESÃO PORTIFOLIO */
 .wrapper-avalia {
     background-color: rgb(255, 162, 0);
     height: auto;
-    border-radius: 5rem;
+  
     margin-top: 2rem;
 }
 
@@ -458,7 +480,7 @@ input {
 .avalia img {
     width: 45rem;
     box-shadow: 1px 1px 1rem black;
-    border-radius: 1rem;
+    
 }
 
 
@@ -467,7 +489,7 @@ input {
 .wrapper-cont {
     background-color: rgba(0, 0, 0, 0.7);
     height: auto;
-    border-radius: 5rem 5rem;
+
     margin: 2rem 0;
 }
 
@@ -489,7 +511,7 @@ input {
 
 .contato-img {
     height: 100%;
-    border-radius: 1rem;
+    
 }
 
 .div-contato {
@@ -570,6 +592,17 @@ footer {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* PAGINA SERVICOS */
 
 
@@ -578,7 +611,7 @@ footer {
     background-image: url(img/fundo-servicos.jpg);
     height: auto;
     background-size: cover;
-    border-radius: 0 0 5rem 5rem ;
+
 }
 
 .manu {
@@ -618,7 +651,6 @@ footer {
 .wrapper-pq {
     background-color: white;
     height: auto;
-    border-bottom: 1px solid var(--color-black);
 }
 
 .pq {
@@ -646,9 +678,7 @@ footer {
 
 /* SECTION RECUPERACAO */
 .wrapper-recu {
-    background-color: white;
     height: auto;
-    border-bottom: 1px solid var(--color-black);
 }
 
 .recu {
@@ -698,7 +728,7 @@ footer {
 .wrapper-areia {
     background-color: white;
     height: auto;
-    border-bottom: 1px solid var(--color-black);
+   
 }
 
 .areia {
@@ -740,10 +770,10 @@ footer {
 
 /* SESSAO INSTALACAO */
 .wrapper-instala {
-    background-color: white;
+   
     height: auto;
-    border-bottom: 1px solid var(--color-black);
-    border-radius: 10rem;
+   
+  
 }
 
 .instala {
@@ -828,9 +858,8 @@ footer {
 
 /* SESSAO ILUMINACAO */
 .wrapper-ilumi {
-    background-color: var(--color-btn);
     height: auto;
-    border-radius: 5rem;
+
 }
 
 .ilumi {
@@ -865,15 +894,12 @@ footer {
 .ilumi-content p {
     font-size: 2rem;
     letter-spacing: 1px;
-    color: var(--color-black);
+   
     margin-bottom: auto;
     color: black;
 }
 
-.ilumi-content a {
-   background-color: var(--color-black);
-   color: white;
-}
+
 
 .ilumi-content a:hover {
     background-color: white;
@@ -927,7 +953,7 @@ footer {
 .wrapper-conte {
     background-color: rgb(0, 38, 255);
     height: auto;
-    border-radius: 5rem;
+  
 }
 
 .conte {
