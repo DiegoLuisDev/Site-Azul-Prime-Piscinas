@@ -1,5 +1,5 @@
 :root {
-    --color-btn: rgb(0, 195, 255);
+    --color-btn: #00c3ff;
     --color-black: #424242;
     --color-whats: #15e715;
 }
@@ -401,7 +401,7 @@ input {
 .wrapper-port {
     background-color: var(--color-btn);
     height: auto;
-    border-radius: 5rem;
+    border-radius: 10rem 0 10rem;
 }
 
 .port {
@@ -433,8 +433,8 @@ input {
 .wrapper-avalia {
     background-color: rgb(255, 162, 0);
     height: auto;
-    border-radius: 5rem;
-    margin-top: 2rem;
+    border-radius: 10rem 0 10rem;
+    /* margin-top: 2rem; */
 }
 
 .avalia {
@@ -461,14 +461,26 @@ input {
     border-radius: 1rem;
 }
 
+.wrapper-localiza {
+    height: auto;
+}
 
+.localiza h2 {
+    text-align: center;
+    font-size: 5rem;
+    margin: 4rem 0;
+}
+
+/* .localiza iframe {
+
+} */
 
 /* SESSÃO CONTATOS */
 .wrapper-cont {
     background-color: rgba(0, 0, 0, 0.7);
     height: auto;
-    border-radius: 5rem 5rem;
-    margin: 2rem 0;
+    border-radius: 10rem 0 10rem;
+    /* margin: 2rem 0; */
 }
 
 .contato {
@@ -603,6 +615,10 @@ footer {
     margin-bottom: 2rem;
     font-size: 2.5rem;
     font-weight: bold;
+}
+
+.manu-content strong {
+    font-size: 2.8rem;
 }
 
 .manu-content p:nth-child(3) {
@@ -830,7 +846,7 @@ footer {
 .wrapper-ilumi {
     background-color: var(--color-btn);
     height: auto;
-    border-radius: 5rem;
+    border-radius: 10rem 0 10rem;
 }
 
 .ilumi {
@@ -927,7 +943,7 @@ footer {
 .wrapper-conte {
     background-color: rgb(0, 38, 255);
     height: auto;
-    border-radius: 5rem;
+    border-radius: 10rem 0 10rem;
 }
 
 .conte {
@@ -976,12 +992,12 @@ footer {
     bottom: 4rem;
     right: 4rem;
     z-index: 9999;
-    border-radius: 50%;
-    
+    padding: 0;
+    margin: 0;
 }
 
 .whatsapp img {
-    border-radius: 25%;
+    width: 10rem;
 }
 
 
