@@ -87,7 +87,7 @@ p {
 }
 
 .header-div img {
-    width: 18rem;
+    width: 20rem;
     height: auto;
     padding: 1rem 0;
     /* background-color: brown; */
@@ -339,7 +339,6 @@ input {
     justify-content: center;
     margin-bottom: 5rem;
     gap: 2rem;
-    
 }
 
 .servicos-itens .divs {
@@ -431,7 +430,7 @@ input {
 
 /* SESÃO PORTIFOLIO */
 .wrapper-avalia {
-    background-color: rgb(255, 162, 0);
+    background-color: rgb(0, 0, 0, 0.7);
     height: auto;
     border-radius: 10rem 0 10rem;
     /* margin-top: 2rem; */
@@ -451,7 +450,7 @@ input {
 .avalia-itens {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 6rem;
     justify-content: center;
 }
 
@@ -1002,6 +1001,10 @@ footer {
 
 
 @media (max-width: 768px) { /* Ajuste para telas menores */  
+    .sec-principal {
+        gap: 0;
+    }
+
     .servicos h1 {
         font-size: 4rem;
     }
@@ -1025,6 +1028,18 @@ footer {
 
     .servicos h3 a {
         font-size: 3rem;
+    }
+
+    .servicos-itens {
+        gap: 0;
+    }
+
+    .avalia-itens {
+        gap: 0;
+    }
+
+    .port-itens {
+        gap: 0;
     }
 
     .conte-btn {
