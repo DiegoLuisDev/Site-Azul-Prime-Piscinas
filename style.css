@@ -299,6 +299,10 @@ input {
     color: var(--color-black);
 }
 
+.sobre-img {
+    width: 48rem;
+}
+
 .sobre-content {
     width: 48rem;
 }
@@ -1003,6 +1007,10 @@ footer {
 @media (max-width: 768px) { /* Ajuste para telas menores */  
     .sec-principal {
         gap: 0;
+    }
+
+    .sobre-content h2 {
+        text-align: center;
     }
 
     .servicos h1 {
